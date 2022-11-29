@@ -12,6 +12,7 @@ export function getItems(filter) {
   if (!filter) {
     return allItems
   }
+  console.log('filtering...')
   return matchSorter(allItems, filter, {
     keys: ['name'],
   })
